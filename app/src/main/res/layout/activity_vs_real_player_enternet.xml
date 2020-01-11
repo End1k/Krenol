@@ -15,7 +15,7 @@
         android:onClick="bclick"
  />
 
-    <com.example.myapplication.ViewTTT
+    <com.example.krenol.ViewTTT
         android:id="@+id/viewtt"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

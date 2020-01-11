@@ -2,9 +2,9 @@ package com.example.krenol
 
 import android.graphics.*
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
 import android.view.MotionEvent
 
 class MainActivity : AppCompatActivity() {
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        viewttt.setOnTouchListener(
+        v.setOnTouchListener(
             object : View.OnTouchListener {
                 override fun onTouch(p0: View?, p1: MotionEvent?): Boolean {
                     if (p1?.action == MotionEvent.ACTION_DOWN )
@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
                         var p : Point = Point()
 
                         if (p1 != null) {
-                            p.x = (p1.y / (viewttt.height / g.psize)).toInt()
-                            p.y = (p1.x / (viewttt.width / g.psize)).toInt()
+                            p.x = (p1.y / (v.height / g.psize)).toInt()
+                            p.y = (p1.x / (v.width / g.psize)).toInt()
 
                             sd.turni(p)
                         }

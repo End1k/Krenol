@@ -6,8 +6,7 @@ import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_vs_real_player_enternet.*
+
 
 class vsRealPlayerActivityEnternet : AppCompatActivity() {
 
@@ -34,7 +33,7 @@ class vsRealPlayerActivityEnternet : AppCompatActivity() {
         v = findViewById(R.id.viewtt)
         v.g = g
 
-        viewtt.setOnTouchListener(
+        v.setOnTouchListener(
 
             object : View.OnTouchListener {
                 override fun onTouch(p0: View?, p1: MotionEvent?): Boolean {
@@ -42,8 +41,8 @@ class vsRealPlayerActivityEnternet : AppCompatActivity() {
                     var p: Point = Point()
 
                     if (p1 != null) {
-                        p.x = (p1.y / (viewtt.height / g.psize)).toInt()
-                        p.y = (p1.x / (viewtt.width / g.psize)).toInt()
+                        p.x = (p1.y / (v.height / g.psize)).toInt()
+                        p.y = (p1.x / (v.width / g.psize)).toInt()
 
 
 
