@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/SERIYYYYY"
+    android:orientation="vertical"
+    tools:context=".Mainest2Activity">
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="288dp"
+        android:layout_height="161dp"
+        android:background="@drawable/comp"
+        android:onClick="toComputer"
+        android:text="PLAY VS COMPUTER"
+        android:textColor="@color/BELIYYYYY"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonP"
+        android:layout_width="282dp"
+        android:layout_height="135dp"
+        android:background="@drawable/man"
+        android:onClick="toPlayer"
+        android:text="PLAY VS REAL PLAYER"
+        android:textColor="@color/BELIYYYYY"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_width="289dp"
+        android:layout_height="138dp"
+        android:background="@drawable/man"
+        android:onClick="toEnternet"
+        android:text="play vs real player enternet"
+        android:textColor="@color/BELIYYYYY"
+        android:textSize="30sp"
+/>
+
+</LinearLayout>

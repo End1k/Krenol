@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "475269207264",
+    "firebase_url": "https://krenol-v2-356fb.firebaseio.com",
+    "project_id": "krenol-v2-356fb",
+    "storage_bucket": "krenol-v2-356fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475269207264:android:45b81576d2aad57c112c85",
+        "android_client_info": {
+          "package_name": "com.example.krenol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475269207264-o9jmqhajj53prlk2jnmi7cd2obbrb6cr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.krenol",
+            "certificate_hash": "b6086a250ed4f5de955401be8c8fae2ded108e0c"
+          }
+        },
+        {
+          "client_id": "475269207264-fursda2nvi6tdn3e2phbat71cdk3cvkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpjGPTqcHumCzHbWwDes2eekd_XtsVkqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475269207264-fursda2nvi6tdn3e2phbat71cdk3cvkc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
