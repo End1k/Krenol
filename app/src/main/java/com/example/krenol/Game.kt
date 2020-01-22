@@ -131,45 +131,44 @@ class Game(val p1n: Player, val p2n : Player){
     }
 
     fun draw(canvas: Canvas){
-        var drawsize : Int = 3;
 
         var brus: Paint = Paint()
         brus.strokeWidth = 20f
-        for (i in 0..drawsize){
-            canvas.drawLine(i*(canvas.width/drawsize).toFloat(), 0f, i*(canvas.width/drawsize).toFloat(),
+        for (i in 0..psize){
+            canvas.drawLine(i*(canvas.width/psize).toFloat(), 0f, i*(canvas.width/psize).toFloat(),
                 canvas.height.toFloat(),brus)
 
         }
-        for (i in 0..drawsize) {
+        for (i in 0..psize) {
             canvas.drawLine(
-                0f, i * (canvas.height / drawsize).toFloat(),
-                canvas.width.toFloat(),i * (canvas.height/ drawsize).toFloat(), brus )
+                0f, i * (canvas.height / psize).toFloat(),
+                canvas.width.toFloat(),i * (canvas.height/ psize).toFloat(), brus )
         }
 
-        for (x in 0..drawsize-1)
+        for (x in 0..psize-1)
         {
-            for (y in 0..drawsize-1)
+            for (y in 0..psize-1)
             {
                 if (pole[x][y] == 1)
                 {
                     brus.color = Color.BLUE  //BLUE O
                     if (canvas.width > canvas.height)
                     {
-                        canvas.drawCircle(y.toFloat() * (canvas.width / drawsize) + canvas.width / drawsize / 2  ,
-                            x.toFloat() * (canvas.height / drawsize) + canvas.height / drawsize / 2, (canvas.height / drawsize / 2).toFloat(), brus)
+                        canvas.drawCircle(y.toFloat() * (canvas.width / psize) + canvas.width / psize / 2  ,
+                            x.toFloat() * (canvas.height / psize) + canvas.height / psize / 2, (canvas.height / psize / 2).toFloat(), brus)
                     }
                     else
                     {
-                        canvas.drawCircle(y.toFloat() * (canvas.width / drawsize) + canvas.width / drawsize / 2  ,
-                            x.toFloat() * (canvas.height / drawsize) + canvas.height / drawsize / 2, (canvas.width / drawsize / 2).toFloat(), brus)
+                        canvas.drawCircle(y.toFloat() * (canvas.width / psize) + canvas.width / psize / 2  ,
+                            x.toFloat() * (canvas.height / psize) + canvas.height / psize / 2, (canvas.width / psize / 2).toFloat(), brus)
                     }
 
                 }
                 else if (pole[x][y] == 2)
                 {
                     brus.color = Color.RED  //RED X
-                    canvas.drawLine(y.toFloat() * (canvas.width / drawsize), x.toFloat() * (canvas.height / drawsize), (y+1).toFloat() * (canvas.width / drawsize), (x+1).toFloat() * (canvas.height / drawsize), brus)
-                    canvas.drawLine((y+1).toFloat() * (canvas.width / drawsize), x.toFloat() * (canvas.height / drawsize), y.toFloat() * (canvas.width / drawsize), (x+1).toFloat() * (canvas.height / drawsize), brus)
+                    canvas.drawLine(y.toFloat() * (canvas.width / psize), x.toFloat() * (canvas.height / psize), (y+1).toFloat() * (canvas.width / psize), (x+1).toFloat() * (canvas.height / psize), brus)
+                    canvas.drawLine((y+1).toFloat() * (canvas.width / psize), x.toFloat() * (canvas.height / psize), y.toFloat() * (canvas.width / psize), (x+1).toFloat() * (canvas.height / psize), brus)
                 }
             }
         }
